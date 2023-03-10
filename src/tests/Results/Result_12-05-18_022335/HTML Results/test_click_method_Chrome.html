@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <html>
+   <head>
+    <style type="text/css">
+     @font-face {
+  			font-family: 'CNNSans Condensed';
+  			src:  url('../../../../../resources/reportContent/CNNSans-Condensed.ttf') format('truetype');
+	}
+	
+    @font-face {
+            font-family: 'CNNSans Condensed Bold';
+  			src:  url('../../../../../resources/reportContent/CNNSans-CondensedBold.ttf') format('truetype');
+    }
+    
+    @font-face {
+  			font-family: 'CNNSans Display Light';
+  			src:  url('../../../../../resources/reportContent/CNNSansDisplay-Light.ttf') format('truetype');
+    }
+    
+        @font-face {
+  			font-family: 'CNNSans Display Bold';
+  			src:  url('../../../../../resources/reportContent/CNNSansDisplay-Medium.ttf') format('truetype');
+    }
+        
+			 body { 
+				 background: url('../../../../../resources/reportContent/Pattern_2.jpg');; 
+				 font-family: CNNSans Condensed Bold; 
+				 text-align: center; 
+			 	width: 97%
+			 } 
+
+			 small { 
+				 font-size: 0.7em; 
+			 } 
+
+			 table { 
+				 border: 2px solid  rgb(70, 70, 70); 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 1200px; 
+				 margin-left: auto; 
+				 margin-right: auto; 
+			 }
+    
+    			#testHeading {
+                font-family: CNNSans Display Bold;
+                font-size: 1.9em;
+    			}
+
+			 tr.heading { 
+				 background-color: #0ccdff;
+                 font-family: CNNSans Condensed;
+				 color: #FFFFFF; 
+				 font-size: 1.7em; 
+				 font-weight: bold;
+                 text-shadow: 0px 0px 6.5px #464646;
+			 } 
+
+			 tr.subheading { 
+				 background-color: #FFFFFF;
+				 font-weight: bold;
+                 font-family: CNNSans Display Bold;
+				 font-size: 1.2em; 
+				 text-align: left;
+                 color: #282828;
+                 text-shadow: 0px 0px 5.5px #464646;
+			 }
+			 
+			 th.title {
+                text-align: center;
+             } 
+
+			 tr.section { 
+				 background-color: #D6D8D8; 
+				 color: #000000; 
+				 cursor: pointer; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.subsection { 
+				 cursor: pointer; 
+			 } 
+
+			 tr.content { 
+				 background-color: #FFFFFF; 
+				 color: #000000;
+                 font-family: CNNSans Display Light;
+				 font-size: 1.0em; 
+				 display: table-row; 
+			 } 
+
+			 td, th { 
+				 padding: 8px; 
+				 text-align: inherit\0/; 
+			 } 
+
+			 td.justified { 
+				 text-align: justify; 
+			 } 
+			 
+			td.description { 
+				 text-align: justify;
+				 max-width: 20px;
+				 overflow-wrap: break-word;
+  				 word-wrap: break-word;
+			 } 
+
+			 td.pass a { 
+				 font-family: CNNSans Display Bold; 
+				 color: #6DF304; 
+			 } 
+
+			 td.fail a { 
+				 font-family: CNNSans Display Bold; 
+				 color: #FF0606; 
+			 } 
+
+			 td.done, td.screenshot { 
+				 font-family: CNNSans Display Bold; 
+				 color: black; 
+			 } 
+
+			 td.debug { 
+				 font-family: CNNSans Display Bold; 
+				 color: blue; 
+			 } 
+
+			 td.warning { 
+				 font-family: CNNSans Display Bold;
+				 color: #FEB900; 
+			 }
+			 
+			 img.turnerLogo {
+          		display: block;
+          		margin: 0 auto;
+        			padding-bottom: 5px;
+    			}
+    
+		    #glass {
+		    		visibility: visible;
+		        length: 16px;
+		        width: 16px;
+		        padding-right: 5px;
+			}
+    </style>
+   </head>
+  </html>
+  <title>
+   test_click_method_Chrome – Automation Execution Results
+  </title>
+ </head>
+ <body>
+  <img alt="HTML5 Icon" class="turnerLogo" src="../../../../../resources/reportContent/TURNER_Logo_RGB_OverDarkBG.png" style="“width:700px;height:110px;”"/>
+  <table id="header">
+   <colgroup>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+   </colgroup>
+   <thead>
+    <tr class="heading">
+     <th colspan="4" id="testHeading">
+      test_click_method
+     </th>
+    </tr>
+    <tr class="subheading">
+     <th class="title">
+      Browser:
+     </th>
+     <th id="browser">
+      Chrome
+     </th>
+     <th class="title">
+      URL:
+     </th>
+     <th id="url">
+      http://www.google.com
+     </th>
+    </tr>
+   </thead>
+  </table>
+  <table id="main">
+   <colgroup>
+    <col style="width: 8%"/>
+    <col style="width: 12%"/>
+    <col style="width: 62%"/>
+    <col style="width: 8%"/>
+    <col style="width: 10%"/>
+   </colgroup>
+   <thead>
+    <tr class="heading">
+     <th>
+      Step_No
+     </th>
+     <th>
+      Step_Name
+     </th>
+     <th>
+      Description
+     </th>
+     <th>
+      Status
+     </th>
+     <th>
+      Step_Time
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="section">
+     <td colspan="5" onclick="toggleMenu('&lt;/tbody&gt;')">
+      + Detailed Steps
+     </td>
+    </tr>
+   </tbody>
+   <tbody id="testStepsTable" style="display:table-row-group">
+    <tr class="content" id="1">
+     <td>
+      1
+     </td>
+     <td class="justified">
+      test_click_method
+     </td>
+     <td class="description">
+      Testing report 1
+     </td>
+     <td class="DONE" id="DONE1">
+      DONE
+      <img align="justify" id="glass" src="../../../../../resources/reportContent/64x64_ICONS_Navigation_Checkmark.jpg"/>
+     </td>
+     <td>
+      02:23:37
+     </td>
+    </tr>
+    <tr class="content" id="2">
+     <td>
+      2
+     </td>
+     <td class="justified">
+      test_click_method
+     </td>
+     <td class="description">
+      Testing assertion pass
+     </td>
+     <td class="PASS" id="PASS2">
+      <a href="..\Screenshots\test_click_method_Chrome_12-05-18_02:23:37.png">
+       PASS
+      </a>
+      <img align="justify" id="glass" src="../../../../../resources/reportContent/64x64_ICONS_Navigation_Checkmark.jpg"/>
+     </td>
+     <td>
+      02:23:37
+     </td>
+    </tr>
+    <tr class="content" id="3">
+     <td>
+      3
+     </td>
+     <td class="justified">
+      test_click_method
+     </td>
+     <td class="description">
+      Testing assertion pass 2
+     </td>
+     <td class="PASS" id="PASS3">
+      <a href="..\Screenshots\test_click_method_Chrome_12-05-18_02:23:38.png">
+       PASS
+      </a>
+      <img align="justify" id="glass" src="../../../../../resources/reportContent/64x64_ICONS_Navigation_Checkmark.jpg"/>
+     </td>
+     <td>
+      02:23:39
+     </td>
+    </tr>
+    <tr class="content" id="4">
+     <td>
+      4
+     </td>
+     <td class="justified">
+      test_click_method
+     </td>
+     <td class="description">
+      Testing report 2
+     </td>
+     <td class="DONE" id="DONE4">
+      DONE
+      <img align="justify" id="glass" src="../../../../../resources/reportContent/64x64_ICONS_Navigation_Checkmark.jpg"/>
+     </td>
+     <td>
+      02:23:39
+     </td>
+    </tr>
+    <tr class="content" id="5">
+     <td>
+      5
+     </td>
+     <td class="justified">
+      test_click_method
+     </td>
+     <td class="description">
+      This test Failed.
+     </td>
+     <td class="FAIL" id="FAIL5">
+      <a href="..\Screenshots\test_click_method_Chrome_12-05-18_02:23:39.png">
+       FAIL
+      </a>
+      <img align="justify" id="glass" src="../../../../../resources/reportContent/64x64_ICONS_Navigation_Alert.jpg"/>
+     </td>
+     <td>
+      02:23:39
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>
